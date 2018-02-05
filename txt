@@ -1,0 +1,7 @@
+sudo service postgresql start
+
+cd /your/app/path
+bundle install
+bundle exec rake db:create
+bundle exec rake db:migrate
+bundle exec rails server
